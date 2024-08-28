@@ -1,0 +1,84 @@
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+.container {
+    background: linear-gradient(120deg, #ab1f99 0%, #5b15dc 50%, #157fdc 100%);
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url("./img/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.task-list {
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    width: 300px;
+    height: 35px;
+}
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.task-add {
+    border-radius: 10px;
+    padding: 6px;
+    border: none;
+    width: 90px;
+    height: 35px;
+    background-color: white;
+    float: right;
+    cursor: pointer;
+}
+
+.task-add:hover {
+    opacity: 0.8;    
+}
+
+.task-add:active {
+    opacity: 0.6;
+}
+
+.done {
+    background-color: rgb(255, 111, 0);
+    text-decoration: line-through;
+}
+
